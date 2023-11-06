@@ -1,7 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import  React  from 'react';
+import { View } from 'react-native';
+import ModifyAv from './ModifyAv';
+import ClientAp from './ClientAp';
+
 
 export default function App() {
+  return (
+    <View>
+      <StatusBar style = 'light' />
+      <ModifyAv/>
+    </View>
+
+    /*<View>
+      <StatusBar style = 'light' />
+      <ClientAp/>
+    </View>*/
+  )
+}
+/*export default function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
@@ -17,4 +34,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+});*/
